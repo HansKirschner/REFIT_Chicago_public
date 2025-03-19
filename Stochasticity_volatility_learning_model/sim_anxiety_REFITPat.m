@@ -1,7 +1,11 @@
 function sim_anxiety_REFITPat(s0_lesioned,nsimu)
 
+% The code for the stochasticity and volatility leanring model is adopted from 
+% Piray & Daw 2021 (https://www.nature.com/articles/s41467-021-26731-9).
+
 path('helper/',path);
 
+% loop over stimuli
 for s = 1 :3 
 
     [p_task,out_cometask,tvolatile,tstable]=data_REFITChigaco(s);
